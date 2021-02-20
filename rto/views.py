@@ -43,7 +43,7 @@ def addCityToDB(state_name, city_code,city_name):
 def addCity(request):
     try : 
         import pandas as pd 
-        af = pd.read_csv('/Users/rakshitkathawate/OneDrive - VMware, Inc/Webapp_Project/myproject/rto_codes.csv')
+        af = pd.read_csv('/home/RakshitKathawate/rto-code-app/rto_codes.csv')
         # af = af.head()
 
         for idx, row in af.iterrows():
