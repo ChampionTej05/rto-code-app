@@ -39,7 +39,7 @@ def addCityToDB(state_name, city_code,city_name):
         return 400
 
 
-# use this  url when you need to add data to Database
+# use this  url when you need to add data to Database from rto_Codes.csv
 def addCity(request):
     try : 
         import pandas as pd 
