@@ -1,0 +1,17 @@
+<h1> GET the City Name from RTO Code  !!! </h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'rto:findCity'%}" method="post">
+{% csrf_token %}
+<label for="state_name">State name :</label>
+<input pattern="[a-zA-Z]+" oninvalid ="alert('Please enter Alphabets only');" type="text" id="state_name" name="state_name"><br><br>
+
+<label for="city_code">City Code:</label>
+<input type="text" id="city_code" name="city_code"><br><br>
+
+<!-- <label for="city_name">City Name:</label>
+<input type="text" id="city_name" name="city_name"><br><br> -->
+
+<input type="submit" value="Find">
+</form>
